@@ -1,0 +1,10 @@
+D:\12NET\MicroServicos\Dashboard\bin\Debug\netcoreapp2.0\Dashboard.deps.json
+D:\12NET\MicroServicos\Dashboard\bin\Debug\netcoreapp2.0\Dashboard.runtimeconfig.json
+D:\12NET\MicroServicos\Dashboard\bin\Debug\netcoreapp2.0\Dashboard.runtimeconfig.dev.json
+D:\12NET\MicroServicos\Dashboard\bin\Debug\netcoreapp2.0\Dashboard.dll
+D:\12NET\MicroServicos\Dashboard\bin\Debug\netcoreapp2.0\Dashboard.pdb
+D:\12NET\MicroServicos\Dashboard\obj\Debug\netcoreapp2.0\Dashboard.csproj.CoreCompileInputs.cache
+D:\12NET\MicroServicos\Dashboard\obj\Debug\netcoreapp2.0\Dashboard.AssemblyInfoInputs.cache
+D:\12NET\MicroServicos\Dashboard\obj\Debug\netcoreapp2.0\Dashboard.AssemblyInfo.cs
+D:\12NET\MicroServicos\Dashboard\obj\Debug\netcoreapp2.0\Dashboard.dll
+D:\12NET\MicroServicos\Dashboard\obj\Debug\netcoreapp2.0\Dashboard.pdb

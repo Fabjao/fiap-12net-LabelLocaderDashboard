@@ -1,0 +1,10 @@
+D:\12NET\MicroServicos\LabelLoader\bin\Debug\netcoreapp2.0\LabelLoader.deps.json
+D:\12NET\MicroServicos\LabelLoader\bin\Debug\netcoreapp2.0\LabelLoader.runtimeconfig.json
+D:\12NET\MicroServicos\LabelLoader\bin\Debug\netcoreapp2.0\LabelLoader.runtimeconfig.dev.json
+D:\12NET\MicroServicos\LabelLoader\bin\Debug\netcoreapp2.0\LabelLoader.dll
+D:\12NET\MicroServicos\LabelLoader\bin\Debug\netcoreapp2.0\LabelLoader.pdb
+D:\12NET\MicroServicos\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.csproj.CoreCompileInputs.cache
+D:\12NET\MicroServicos\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.AssemblyInfoInputs.cache
+D:\12NET\MicroServicos\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.AssemblyInfo.cs
+D:\12NET\MicroServicos\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.dll
+D:\12NET\MicroServicos\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.pdb
