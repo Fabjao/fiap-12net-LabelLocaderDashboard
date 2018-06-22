@@ -3,14 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LabelLoader.Models;
+using LabelLoader.Negocio;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace LabelLoader.Controllers
 {
+    /// <summary>
+    /// Api label Loader
+    /// </summary>
     [Route("api/labelLoader")]
     public class LabelController : Controller
     {
+        private ProdutoNegocio _produtoNegocio;
+
+        /// <summary>
+        /// Criar um novo objeto do produtoNegogio
+        /// </summary>
+        public LabelController()
+        {
+            _produtoNegocio = new ProdutoNegocio();
+        }
+
         /// <summary>
         /// Lista de produtos com os ingredientes
         /// </summary>
@@ -38,5 +52,16 @@ namespace LabelLoader.Controllers
 
             return Ok(produto2);
         }
+
+        /// <summary>
+        /// Lista de Imagens
+        /// </summary>
+        [HttpGet]
+        [Route("TesteImagens")]
+        public IActionResult Imagens()
+        {
+            return Ok(_produtoNegocio.ListaDeProduto());
+        }
+
     }
 }

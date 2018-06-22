@@ -9,3 +9,4 @@ C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\Release\netcoreapp2.0\L
 C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\Release\netcoreapp2.0\LabelLoader.dll
 C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\Release\netcoreapp2.0\LabelLoader.pdb
 C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\Release\netcoreapp2.0\LabelLoader.xml
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\Release\netcoreapp2.0\LabelLoader.csprojAssemblyReference.cache
