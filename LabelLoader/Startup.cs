@@ -16,16 +16,18 @@ namespace LabelLoader
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            var mvcCoreBuilder = services.AddMvcCore();
-            mvcCoreBuilder
-            .AddFormatterMappings()
-            .AddJsonFormatters()
-            .AddCors();
+            //var mvcCoreBuilder = services.AddMvcCore();
+            //mvcCoreBuilder
+            //.AddFormatterMappings()
+            //.AddJsonFormatters()
+            //.AddCors();
+            services.AddMvc();
 
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new Info { Title = "Products", Version = "v1" });
-            //});
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Products", Version = "v1" });
+                c.IncludeXmlComments(@"bin\Release\netcoreapp2.0\LabelLoader.xml");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,13 +37,15 @@ namespace LabelLoader
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseMvc();
-            //app.UseSwagger();
+            
+            app.UseSwagger();
 
-            //app.UseSwaggerUI(c =>
-            //{
-            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-            //});
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
+            });
+            app.UseMvc();
         }
     }
 }

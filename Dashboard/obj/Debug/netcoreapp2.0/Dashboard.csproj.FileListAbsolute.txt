@@ -8,3 +8,8 @@ D:\12NET\MicroServicos\Dashboard\obj\Debug\netcoreapp2.0\Dashboard.AssemblyInfoI
 D:\12NET\MicroServicos\Dashboard\obj\Debug\netcoreapp2.0\Dashboard.AssemblyInfo.cs
 D:\12NET\MicroServicos\Dashboard\obj\Debug\netcoreapp2.0\Dashboard.dll
 D:\12NET\MicroServicos\Dashboard\obj\Debug\netcoreapp2.0\Dashboard.pdb
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\bin\Debug\netcoreapp2.0\Dashboard.deps.json
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\bin\Debug\netcoreapp2.0\Dashboard.runtimeconfig.json
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\bin\Debug\netcoreapp2.0\Dashboard.runtimeconfig.dev.json
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\bin\Debug\netcoreapp2.0\Dashboard.dll
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\bin\Debug\netcoreapp2.0\Dashboard.pdb

@@ -21,3 +21,14 @@ D:\12NET\Microservice\LabelLoaderDashboard\LabelLoader\bin\Debug\netcoreapp2.0\L
 D:\12NET\Microservice\LabelLoaderDashboard\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.dll
 D:\12NET\Microservice\LabelLoaderDashboard\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.pdb
 >>>>>>> 358f523c3c073aed76cb1bb3076f00653cd6cf2f
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\Debug\netcoreapp2.0\LabelLoader.deps.json
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\Debug\netcoreapp2.0\LabelLoader.runtimeconfig.json
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\Debug\netcoreapp2.0\LabelLoader.runtimeconfig.dev.json
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\Debug\netcoreapp2.0\LabelLoader.dll
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\Debug\netcoreapp2.0\LabelLoader.pdb
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.csprojAssemblyReference.cache
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.csproj.CoreCompileInputs.cache
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.AssemblyInfoInputs.cache
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.AssemblyInfo.cs
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.dll
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\Debug\netcoreapp2.0\LabelLoader.pdb

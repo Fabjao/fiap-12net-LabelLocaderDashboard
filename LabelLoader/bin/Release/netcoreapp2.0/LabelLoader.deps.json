@@ -1,22 +1,22 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "848cdfc1cf82366714133a60b043affe41be575a"
+    "signature": "d0b29914f1f74b97ff44c6c1f8b3a3e16fe110bf"
   },
   "compilationOptions": {
     "defines": [
       "TRACE",
-      "DEBUG",
+      "RELEASE",
       "NETCOREAPP2_0"
     ],
     "languageVersion": "",
     "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,
-    "optimize": false,
+    "optimize": true,
     "keyFile": "",
     "emitEntryPoint": true,
-    "xmlDoc": false,
+    "xmlDoc": true,
     "debugType": "portable"
   },
   "targets": {
@@ -25,6 +25,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0",
+          "Microsoft.ProjectOxford.Vision.DotNetCore": "1.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.2",
           "Newtonsoft.Json": "11.0.2",
           "Swashbuckle.AspNetCore": "2.5.0"
@@ -2283,6 +2284,18 @@
         }
       },
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.ProjectOxford.Vision.DotNetCore/1.1.0": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netcoreapp1.1/Microsoft.ProjectOxford.Vision.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp1.1/Microsoft.ProjectOxford.Vision.dll": {}
+        }
+      },
       "Microsoft.Rest.ClientRuntime/2.3.8": {
         "dependencies": {
           "NETStandard.Library": "2.0.0",
@@ -5341,6 +5354,13 @@
       "sha512": "sha512-aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.ProjectOxford.Vision.DotNetCore/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ineVPVD6snBBzWpR9ptIH3CWGh5WEbP0ZVu01hCKHUh/t/cP4xjXwGynjp5C0Zq98gsiynR9f83XOXqFsM9lfg==",
+      "path": "microsoft.projectoxford.vision.dotnetcore/1.1.0",
+      "hashPath": "microsoft.projectoxford.vision.dotnetcore.1.1.0.nupkg.sha512"
     },
     "Microsoft.Rest.ClientRuntime/2.3.8": {
       "type": "package",
