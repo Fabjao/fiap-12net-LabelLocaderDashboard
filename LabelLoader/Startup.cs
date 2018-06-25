@@ -22,7 +22,8 @@ namespace LabelLoader
             //.AddFormatterMappings()
             //.AddJsonFormatters()
             //.AddCors();
-       
+
+            services.AddCors();       
             services.AddMvc();
 
             services.AddSwaggerGen(c =>

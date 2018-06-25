@@ -27,15 +27,15 @@ namespace LabelLoader.Negocio
             var builder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
             Configuration = builder.Build();
             var chave = Configuration["ChaveAPIVIsion1.0"];
+            var urlVision = Configuration["URLAPIVision"];
 
-            var visionServiceClient = new VisionServiceClient( chave,
-                "https://westcentralus.api.cognitive.microsoft.com/vision/v1.0/");
-           
+            var visionServiceClient = new VisionServiceClient(chave,urlVision);
+
             List<Produto> produtos = new List<Produto>();
             DirectoryInfo dir = new DirectoryInfo($"{Directory.GetCurrentDirectory()}{@"\wwwroot\Imagens"}");
-            var tipoImagens = new[] { ".jpg", ".jpeg", ".png", ".gif", ".bmp" };
+            var tipoImagens = Configuration["TipoImagem"].Split(',');
             OcrResults results;
-            var blacklist = new string[] { "INGREDIENTS", "ALLERGENS", "CONTAINS" };
+            var blacklist = Configuration["BlackList"].Split(','); 
 
             //Filtro para pegar apenas imagens
             var files = dir.GetFiles().Where(file => tipoImagens.Any(file.ToString().ToLower().EndsWith)).ToList();
@@ -52,13 +52,26 @@ namespace LabelLoader.Negocio
 
                     var lines = results.Regions.SelectMany(region => region.Lines);
                     var words = lines.SelectMany(line => line.Words);
-                    var wordsText = words.Select(word => Regex.Replace(word.Text.ToUpper(), @"[^A-Z]+", string.Empty));
+                    var wordsText = words.Select(word => word.Text.ToUpper());
 
-                    List<string> ingredientes = new List<string>();
+                    string todasPalvras = "";
                     foreach (var item in wordsText)
                     {
-                        if (!ingredientes.Contains(item))
-                            ingredientes.Add(item);
+                        todasPalvras += $"{item} ";
+                    }
+
+                    var substituiCarcteresPorVirgula = Configuration["substituiCarcteresPorVirgula"].Split(',');
+                    foreach (var item in substituiCarcteresPorVirgula)
+                    {
+                        todasPalvras = todasPalvras.Replace(item, ",");
+                    }
+                    
+                    var sepadarasPorVirgula = todasPalvras.Split(',');
+                    List<string> ingredientes = new List<string>();
+                    foreach (var item in sepadarasPorVirgula)
+                    {
+                        if (!ingredientes.Contains(item.Trim()) && !blacklist.Contains(item.Trim()))
+                            ingredientes.Add(item.Trim());
                     }
 
                     produtos.Add(new Produto()
@@ -70,6 +83,6 @@ namespace LabelLoader.Negocio
             }
             return produtos;
         }
-                
+
     }
 }
