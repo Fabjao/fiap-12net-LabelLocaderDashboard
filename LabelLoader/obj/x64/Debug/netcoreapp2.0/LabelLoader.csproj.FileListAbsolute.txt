@@ -9,3 +9,4 @@ C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\x64\Debug\netcoreapp2.0
 C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\x64\Debug\netcoreapp2.0\LabelLoader.pdb
 C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\x64\Debug\netcoreapp2.0\LabelLoader.dll
 C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\x64\Debug\netcoreapp2.0\LabelLoader.pdb
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\x64\Debug\netcoreapp2.0\appsettings.json

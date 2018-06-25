@@ -8,6 +8,6 @@ namespace LabelLoader.Models
     public class Produto
     {
         public string ItemName { get; set; }
-        public string[] Ingredients { get; set; }
+        public List<string> Ingredients { get; set; }
     }
 }

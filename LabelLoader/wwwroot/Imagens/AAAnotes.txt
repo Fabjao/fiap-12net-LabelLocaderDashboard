@@ -1,0 +1,30 @@
+COLUMNSTORE
+
+ld02.intranet.polmil.sp.gov.br
+intranet/telefonico.nsf
+
+
+FIELD cmpCodOpm IN (306010000, 306010000, 306013000, 306013000, 306014000, 306014300, 306014300, 306014400, 306014400, 306014500, 306014600, 306015000, 306015000, 306015500, 306015600, 306016000, 306016200, 306016200, 306016300, 306016400, 306016500, 306017000, 306017000, 306017100, 306017100, 306017200, 306017200, 306018000, 306018100, 306018200, 306019000, 306019100)
+
+Telefone
+
+
+vmwld8des01
+
+
+vmwld8des01.cmdo.policiamilitar.sp.gov.br
+intranet/telefonico.nsf
+LDDES01/83257B91005938E5/
+
+
+Field Form = Telefone and Field cmpCodOpm = 306010000
+
+
+This database is currently in use by another person or process
+
+940667
+
+
+\\Vmwfsrprd02.cmdo.policiamilitar.sp.gov.br\cpd$\DDS\Fabrica\Aplicacoes\Portal Telematica
+
+uhomologa
