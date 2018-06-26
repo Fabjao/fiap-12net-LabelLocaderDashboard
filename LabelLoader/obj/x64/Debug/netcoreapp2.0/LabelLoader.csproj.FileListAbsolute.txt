@@ -10,3 +10,6 @@ C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\x64\Debug\netcoreapp2.0
 C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\x64\Debug\netcoreapp2.0\LabelLoader.dll
 C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\x64\Debug\netcoreapp2.0\LabelLoader.pdb
 C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\x64\Debug\netcoreapp2.0\appsettings.json
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\x64\Debug\netcoreapp2.0\GeekBurger.LabelLocader.Contract.dll
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\bin\x64\Debug\netcoreapp2.0\GeekBurger.LabelLocader.Contract.pdb
+C:\TEMP\fiap-12net-LabelLocaderDashboard\LabelLoader\obj\x64\Debug\netcoreapp2.0\LabelLoader.csproj.CopyComplete

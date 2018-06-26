@@ -1,0 +1,11 @@
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.deps.json
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.runtimeconfig.json
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.runtimeconfig.dev.json
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.dll
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.pdb
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.csprojAssemblyReference.cache
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.csproj.CoreCompileInputs.cache
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.AssemblyInfoInputs.cache
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.AssemblyInfo.cs
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.dll
+C:\TEMP\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.pdb

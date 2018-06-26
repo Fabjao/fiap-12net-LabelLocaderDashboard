@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LabelLoader.Models
+namespace GeekBurger.LabelLocader.Contract.Models
 {
     public class Produto
     {

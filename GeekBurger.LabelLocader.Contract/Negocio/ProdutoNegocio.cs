@@ -1,4 +1,4 @@
-﻿using LabelLoader.Models;
+﻿using GeekBurger.LabelLocader.Contract.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.ProjectOxford.Vision;
 using Microsoft.ProjectOxford.Vision.Contract;
@@ -29,13 +29,13 @@ namespace LabelLoader.Negocio
             var chave = Configuration["ChaveAPIVIsion1.0"];
             var urlVision = Configuration["URLAPIVision"];
 
-            var visionServiceClient = new VisionServiceClient(chave,urlVision);
+            var visionServiceClient = new VisionServiceClient(chave, urlVision);
 
             List<Produto> produtos = new List<Produto>();
             DirectoryInfo dir = new DirectoryInfo($"{Directory.GetCurrentDirectory()}{@"\wwwroot\Imagens"}");
             var tipoImagens = Configuration["TipoImagem"].Split(',');
             OcrResults results;
-            var blacklist = Configuration["BlackList"].Split(','); 
+            var blacklist = Configuration["BlackList"].Split(',');
 
             //Filtro para pegar apenas imagens
             var files = dir.GetFiles().Where(file => tipoImagens.Any(file.ToString().ToLower().EndsWith)).ToList();
@@ -65,7 +65,7 @@ namespace LabelLoader.Negocio
                     {
                         todasPalvras = todasPalvras.Replace(item, ",");
                     }
-                    
+
                     var sepadarasPorVirgula = todasPalvras.Split(',');
                     List<string> ingredientes = new List<string>();
                     foreach (var item in sepadarasPorVirgula)
