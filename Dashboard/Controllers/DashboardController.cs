@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-using Dashboard.Models;
+using GeekBurger.Dashboard.Contract.Models;
 
 namespace Dashboard.Controllers
 {
@@ -12,12 +12,14 @@ namespace Dashboard.Controllers
     public class DashboardController : Controller
     {
         [Route("index")]
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
         [Route("sales")]
+        [HttpGet]
         public IActionResult Sales()
         {
             var list = new List<Sale>();
@@ -27,6 +29,7 @@ namespace Dashboard.Controllers
         }
 
         [Route("sales/{Per}/{Value:int}")]
+        [HttpGet]
         public IActionResult Sales(string Per, int Value)
         {
             var list = new List<Sale>();
@@ -36,6 +39,7 @@ namespace Dashboard.Controllers
         }
 
         [Route("UsersWithLessOffer")]
+        [HttpGet]
         public IActionResult UsersWithLessOffer()
         {
             List<Restriction> restrictions = new List<Restriction>();

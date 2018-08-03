@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Dashboard
 {
@@ -15,11 +17,20 @@ namespace Dashboard
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            var mvcCoreBuilder = services.AddMvcCore();
-            mvcCoreBuilder
-            .AddFormatterMappings()
-            .AddJsonFormatters()
-            .AddCors();
+            //var mvcCoreBuilder = services.AddMvcCore();
+            //mvcCoreBuilder
+            //.AddFormatterMappings()
+            //.AddJsonFormatters()
+            //.AddCors();
+
+            services.AddCors();
+            services.AddMvc();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "Products", Version = "v1" });
+                c.IncludeXmlComments(@"bin\x64\Debug\netcoreapp2.0\Dashboard.xml");
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -28,6 +39,14 @@ namespace Dashboard
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
+            });
             app.UseMvc();
         }
     }
