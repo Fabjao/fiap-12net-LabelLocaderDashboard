@@ -4,6 +4,16 @@
         <name>LabelLoader</name>
     </assembly>
     <members>
+        <member name="T:LabelLoader.Controllers.LabelController">
+            <summary>
+            Api label Loader
+            </summary>
+        </member>
+        <member name="M:LabelLoader.Controllers.LabelController.#ctor">
+            <summary>
+            Criar um novo objeto do produtoNegogio
+            </summary>
+        </member>
         <member name="M:LabelLoader.Controllers.LabelController.LabelImageAdded">
             <summary>
             Lista de produtos com os ingredientes
