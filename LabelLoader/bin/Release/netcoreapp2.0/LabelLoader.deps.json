@@ -23,7 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "LabelLoader/1.0.0": {
         "dependencies": {
-          "GeekBurger.LabelLocader.Contract": "1.0.0",
+          "GeekBurger.LabelLoader.Contract": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.ProjectOxford.Vision.DotNetCore": "1.1.0",
@@ -4059,16 +4059,16 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "GeekBurger.LabelLocader.Contract/1.0.0": {
+      "GeekBurger.LabelLoader.Contract/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.ProjectOxford.Vision.DotNetCore": "1.1.0"
         },
         "runtime": {
-          "GeekBurger.LabelLocader.Contract.dll": {}
+          "GeekBurger.LabelLoader.Contract.dll": {}
         },
         "compile": {
-          "GeekBurger.LabelLocader.Contract.dll": {}
+          "GeekBurger.LabelLoader.Contract.dll": {}
         }
       },
       "Microsoft.NETCore.App/2.0.0": {
@@ -6390,7 +6390,7 @@
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
-    "GeekBurger.LabelLocader.Contract/1.0.0": {
+    "GeekBurger.LabelLoader.Contract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

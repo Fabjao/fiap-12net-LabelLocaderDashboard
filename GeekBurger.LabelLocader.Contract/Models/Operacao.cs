@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GeekBurger.LabelLocader.Contract.Models
+namespace GeekBurger.LabelLoader.Contract.Models
 {
     public class Operacao
     {

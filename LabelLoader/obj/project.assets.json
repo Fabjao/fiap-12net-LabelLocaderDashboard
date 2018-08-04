@@ -5008,7 +5008,7 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "GeekBurger.LabelLocader.Contract/1.0.0": {
+      "GeekBurger.LabelLoader.Contract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
@@ -5016,10 +5016,10 @@
           "Microsoft.ProjectOxford.Vision.DotNetCore": "1.1.0"
         },
         "compile": {
-          "bin/placeholder/GeekBurger.LabelLocader.Contract.dll": {}
+          "bin/placeholder/GeekBurger.LabelLoader.Contract.dll": {}
         },
         "runtime": {
-          "bin/placeholder/GeekBurger.LabelLocader.Contract.dll": {}
+          "bin/placeholder/GeekBurger.LabelLoader.Contract.dll": {}
         }
       }
     }
@@ -12999,15 +12999,15 @@
         "windowsazure.storage.nuspec"
       ]
     },
-    "GeekBurger.LabelLocader.Contract/1.0.0": {
+    "GeekBurger.LabelLoader.Contract/1.0.0": {
       "type": "project",
-      "path": "../GeekBurger.LabelLocader.Contract/GeekBurger.LabelLocader.Contract.csproj",
-      "msbuildProject": "../GeekBurger.LabelLocader.Contract/GeekBurger.LabelLocader.Contract.csproj"
+      "path": "../GeekBurger.LabelLocader.Contract/GeekBurger.LabelLoader.Contract.csproj",
+      "msbuildProject": "../GeekBurger.LabelLocader.Contract/GeekBurger.LabelLoader.Contract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "GeekBurger.LabelLocader.Contract >= 1.0.0",
+      "GeekBurger.LabelLoader.Contract >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.ProjectOxford.Vision.DotNetCore >= 1.1.0",
@@ -13023,11 +13023,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
+      "projectUniqueName": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
       "projectName": "LabelLoader",
-      "projectPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
+      "projectPath": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
       "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-      "outputPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\obj\\",
+      "outputPath": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13047,8 +13047,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj": {
-              "projectPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj"
+            "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLoader.Contract.csproj": {
+              "projectPath": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLoader.Contract.csproj"
             }
           }
         }
