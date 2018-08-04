@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GeekBurger.LabelLocader.Contract\GeekBurger.LabelLocader.Contract.csproj" />
+    <ProjectReference Include="..\GeekBurger.LabelLocader.Contract\GeekBurger.LabelLoader.Contract.csproj" />
   </ItemGroup>
 
   <ItemGroup>

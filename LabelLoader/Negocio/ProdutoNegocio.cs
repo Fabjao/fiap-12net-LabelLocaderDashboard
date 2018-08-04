@@ -1,4 +1,4 @@
-﻿using GeekBurger.LabelLocader.Contract.Models;
+﻿using GeekBurger.LabelLoader.Contract.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.ProjectOxford.Vision;
 using Microsoft.ProjectOxford.Vision.Contract;
@@ -6,7 +6,6 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
 
 namespace LabelLoader.Negocio
 {

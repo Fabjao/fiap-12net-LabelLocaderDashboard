@@ -12546,11 +12546,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj",
-      "projectName": "GeekBurger.LabelLocader.Contract",
-      "projectPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj",
+      "projectUniqueName": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLoader.Contract.csproj",
+      "projectName": "GeekBurger.LabelLoader.Contract",
+      "projectPath": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLoader.Contract.csproj",
       "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-      "outputPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\obj\\",
+      "outputPath": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

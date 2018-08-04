@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabelLoader", "LabelLoader\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard", "Dashboard\Dashboard.csproj", "{E259F083-5C57-46A4-8CFF-C4A89EF71A6C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekBurger.LabelLocader.Contract", "GeekBurger.LabelLocader.Contract\GeekBurger.LabelLocader.Contract.csproj", "{4E4C797C-AA02-4EE7-B904-0537AEC1E0B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekBurger.LabelLoader.Contract", "GeekBurger.LabelLocader.Contract\GeekBurger.LabelLoader.Contract.csproj", "{4E4C797C-AA02-4EE7-B904-0537AEC1E0B9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekBurger.Dashboard.Contract", "GeekBurger.Dashboard.Contract.Models\GeekBurger.Dashboard.Contract.csproj", "{B49F5F84-863D-440B-9014-08AD2F1B36CB}"
 EndProject

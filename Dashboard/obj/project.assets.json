@@ -13338,11 +13338,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
+      "projectUniqueName": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
       "projectName": "Dashboard",
-      "projectPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
+      "projectPath": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
       "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-      "outputPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\Dashboard\\obj\\",
+      "outputPath": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\Dashboard\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13362,8 +13362,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj": {
-              "projectPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj"
+            "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj": {
+              "projectPath": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj"
             }
           }
         }
