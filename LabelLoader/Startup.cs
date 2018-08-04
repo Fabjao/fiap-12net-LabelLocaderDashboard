@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -28,8 +22,7 @@ namespace LabelLoader
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Products", Version = "v1" });
-                c.IncludeXmlComments(@"bin\Release\netcoreapp2.0\LabelLoader.xml");
+                c.SwaggerDoc("v1", new Info { Title = "Products", Version = "v1" });                
             });
         }
 

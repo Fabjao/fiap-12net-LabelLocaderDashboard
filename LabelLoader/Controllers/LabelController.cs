@@ -1,5 +1,6 @@
 ﻿using LabelLoader.Negocio;
 using Microsoft.AspNetCore.Mvc;
+using System.Text;
 
 namespace LabelLoader.Controllers
 {
@@ -24,30 +25,14 @@ namespace LabelLoader.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        [Route("LabelImageAdded")]
+        [Route("produtosIngredientes")]
         public IActionResult LabelImageAdded()
         {
-
-            //Dados Mokado
-            //List<Produto> produto2 = new List<Produto>();
-            //produto2.Add(new Produto()
-            //{
-            //    ItemName = "Beef",
-            //    Ingredients = new List<string>() { "Beef","Water","Sugar","Soy","Sauce","Wheat","Soybeans","Salt","Aooke Cider Vinegar","Natural Flavorings","Ppaprika","Natural Smole Flavoring" }
-            //});
-            //produto2.Add(new Produto()
-            //{
-            //    ItemName = "meat",
-            //    Ingredients = new List<string>() { "diary", "gluten", "soy" }
-            //});
-            //produto2.Add(new Produto()
-            //{
-            //    ItemName = "bread",
-            //    Ingredients = new List<string>() { "peanut", "gluten"}
-            //});
-
-            return Ok(_produtoNegocio.ListaDeProduto());
+            var operacao = _produtoNegocio.ListaDeProduto();
+            if (operacao.Sucesso)
+                return Ok(operacao);
+            else
+                return NotFound(operacao);
         }
-
-    }
+    }  
 }

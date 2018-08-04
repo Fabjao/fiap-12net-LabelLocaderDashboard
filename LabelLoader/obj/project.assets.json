@@ -7558,10 +7558,10 @@
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
         "LICENSE.TXT",
-        "Microsoft.NETCore.Platforms.2.0.0.nupkg.sha512",
-        "Microsoft.NETCore.Platforms.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -13017,23 +13017,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\33531106821\\.nuget\\packages\\": {},
+    "C:\\Users\\logonrmlocal\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\TEMP\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
+      "projectUniqueName": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
       "projectName": "LabelLoader",
-      "projectPath": "C:\\TEMP\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
-      "packagesPath": "C:\\Users\\33531106821\\.nuget\\packages\\",
-      "outputPath": "C:\\TEMP\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\obj\\",
+      "projectPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
+      "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
+      "outputPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\33531106821\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\logonrmlocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13041,14 +13041,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://vmwwscdes01.cmdo.policiamilitar.sp.gov.br/Pmesp.NuGet/nuget/": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nugetfiap12.azurewebsites.net/nuget": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\TEMP\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj": {
-              "projectPath": "C:\\TEMP\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj"
+            "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj": {
+              "projectPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj"
             }
           }
         }
