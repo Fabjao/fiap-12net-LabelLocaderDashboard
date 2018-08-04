@@ -8,6 +8,5 @@ namespace GeekBurger.LabelLocader.Contract.Models
     {
         public bool Sucesso { get; set; }
         public string Mensagem { get; set; }
-        public string ComplementoMensagem { get; set; }
     }
 }

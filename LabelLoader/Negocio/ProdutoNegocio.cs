@@ -26,7 +26,7 @@ namespace LabelLoader.Negocio
         public Operacao ListaDeProduto()
         {
             var operacao = new Operacao() { Sucesso = true };
-            
+
             try
             {
 
@@ -80,8 +80,8 @@ namespace LabelLoader.Negocio
                             var palavra = item;
                             // && !blacklist.Contains(item.Trim())
                             for (int i = 0; i < blacklist.Length - 1; i++)
-                            {                                
-                                palavra = palavra.Replace(blacklist[i], "").ToString();                               
+                            {
+                                palavra = palavra.Replace(blacklist[i], "").ToString();
                             }
                             if (!ingredientes.Contains(palavra.Trim()) && !string.IsNullOrWhiteSpace(palavra))
                                 ingredientes.Add(palavra.Trim());
@@ -95,13 +95,12 @@ namespace LabelLoader.Negocio
                     }
                 }
                 operacao.Mensagem = JsonConvert.SerializeObject(produtos);
-                return operacao ;
+                return operacao;
             }
             catch (System.Exception ex)
             {
                 operacao.Sucesso = false;
-                operacao.Mensagem = "Erro ao processar as Imagens";
-                operacao.ComplementoMensagem = ex.Message;
+                operacao.Mensagem = "Erro ao processar as Imagens, tente novamente após 1 minuto";                
                 return operacao;
             }
         }

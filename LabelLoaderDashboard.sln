@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dashboard", "Dashboard\Dash
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekBurger.LabelLocader.Contract", "GeekBurger.LabelLocader.Contract\GeekBurger.LabelLocader.Contract.csproj", "{4E4C797C-AA02-4EE7-B904-0537AEC1E0B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekBurger.Teste", "GeekBurger.Teste\GeekBurger.Teste.csproj", "{56313310-AA46-4EA4-8123-5F310E6446C6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,14 +41,6 @@ Global
 		{4E4C797C-AA02-4EE7-B904-0537AEC1E0B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4E4C797C-AA02-4EE7-B904-0537AEC1E0B9}.Release|x64.ActiveCfg = Release|Any CPU
 		{4E4C797C-AA02-4EE7-B904-0537AEC1E0B9}.Release|x64.Build.0 = Release|Any CPU
-		{56313310-AA46-4EA4-8123-5F310E6446C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56313310-AA46-4EA4-8123-5F310E6446C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56313310-AA46-4EA4-8123-5F310E6446C6}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{56313310-AA46-4EA4-8123-5F310E6446C6}.Debug|x64.Build.0 = Debug|Any CPU
-		{56313310-AA46-4EA4-8123-5F310E6446C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56313310-AA46-4EA4-8123-5F310E6446C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{56313310-AA46-4EA4-8123-5F310E6446C6}.Release|x64.ActiveCfg = Release|Any CPU
-		{56313310-AA46-4EA4-8123-5F310E6446C6}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

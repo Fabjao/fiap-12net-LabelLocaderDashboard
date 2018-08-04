@@ -13023,11 +13023,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\12NET\\MicroServico\\LabelLoader\\LabelLoader.csproj",
+      "projectUniqueName": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
       "projectName": "LabelLoader",
-      "projectPath": "D:\\12NET\\MicroServico\\LabelLoader\\LabelLoader.csproj",
+      "projectPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
       "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-      "outputPath": "D:\\12NET\\MicroServico\\LabelLoader\\obj\\",
+      "outputPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13046,8 +13046,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\12NET\\MicroServico\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj": {
-              "projectPath": "D:\\12NET\\MicroServico\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj"
+            "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj": {
+              "projectPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj"
             }
           }
         }

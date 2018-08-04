@@ -20,5 +20,17 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:LabelLoader.Negocio.ProdutoNegocio">
+            <summary>
+            Classe onde vai ser implementado as regras de negocio
+            </summary>
+        </member>
+        <member name="M:LabelLoader.Negocio.ProdutoNegocio.ListaDeProduto">
+            <summary>
+            Vai passar pelo diretorio da aplicação e usar o cognitive vision para tratar as imagens
+            # A leitura das imagens só seram feitas nos arquivos do tipo: JPEG, PNG, GIF, BMP
+            </summary>
+            <returns></returns>
+        </member>
     </members>
 </doc>

@@ -22,8 +22,7 @@ namespace LabelLoader
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Products", Version = "v1" });
-                c.IncludeXmlComments(@"bin\Release\netcoreapp2.0\LabelLoader.xml");
+                c.SwaggerDoc("v1", new Info { Title = "Products", Version = "v1" });                
             });
         }
 
