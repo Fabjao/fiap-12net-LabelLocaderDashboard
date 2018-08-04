@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace LabelLoader.Negocio
 {
@@ -22,13 +23,13 @@ namespace LabelLoader.Negocio
         /// # A leitura das imagens só seram feitas nos arquivos do tipo: JPEG, PNG, GIF, BMP
         /// </summary>
         /// <returns></returns>
-        public Operacao ListaDeProduto()
+        public async Task<Operacao> ListaDeProdutoAsync()
         {
+            
             var operacao = new Operacao() { Sucesso = true };
 
             try
             {
-
                 List<Produto> produtos = new List<Produto>();
                 var builder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
                 Configuration = builder.Build();
@@ -93,13 +94,17 @@ namespace LabelLoader.Negocio
                         });
                     }
                 }
+
+                ServiceBus service = new ServiceBus();
+                await service.SendMessagesAsync(produtos);
+
                 operacao.Mensagem = JsonConvert.SerializeObject(produtos);
                 return operacao;
             }
             catch (System.Exception ex)
             {
                 operacao.Sucesso = false;
-                operacao.Mensagem = "Erro ao processar as Imagens, tente novamente após 1 minuto";                
+                operacao.Mensagem = "Erro ao processar as Imagens, tente novamente após 1 minuto";
                 return operacao;
             }
         }

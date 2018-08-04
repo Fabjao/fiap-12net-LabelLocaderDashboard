@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj",
+      "projectUniqueName": "D:\\12NET\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj",
       "projectName": "GeekBurger.Dashboard.Contract",
-      "projectPath": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj",
+      "projectPath": "D:\\12NET\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj",
       "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-      "outputPath": "D:\\12NET\\Domingo\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\obj\\",
+      "outputPath": "D:\\12NET\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

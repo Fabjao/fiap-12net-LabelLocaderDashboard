@@ -28,11 +28,13 @@ namespace LabelLoader.Controllers
         [Route("produtosIngredientes")]
         public IActionResult LabelImageAdded()
         {
-            var operacao = _produtoNegocio.ListaDeProduto();
+            
+
+            var operacao = _produtoNegocio.ListaDeProdutoAsync();
             if (operacao.Sucesso)
                 return Ok(operacao);
             else
                 return NotFound(operacao);
         }
-    }  
+    }
 }
