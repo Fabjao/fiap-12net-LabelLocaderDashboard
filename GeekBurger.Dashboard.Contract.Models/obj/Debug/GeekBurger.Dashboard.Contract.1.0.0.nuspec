@@ -12,6 +12,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\RBilar\fiap-12net-LabelLocaderDashboard-master\GeekBurger.Dashboard.Contract.Models\bin\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll" target="lib\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll" />
+    <file src="D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\bin\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll" target="lib\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll" />
   </files>
 </package>

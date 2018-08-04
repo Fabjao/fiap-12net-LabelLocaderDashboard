@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "e531c305d00baddce899010831a73f4f436ee99a"
+    "signature": "4f610eac16faa47cddcb1811a29d1012829bb59d"
   },
   "compilationOptions": {
     "defines": [
@@ -23,15 +23,53 @@
     ".NETCoreApp,Version=v2.0": {
       "Dashboard/1.0.0": {
         "dependencies": {
+          "GeekBurger.Dashboard.Contract": "1.0.0",
+          "GeekBurger.Orders.Contract": "1.0.0",
+          "GeekBurger.Products.Contract": "3.0.0",
+          "GeekBurger.StoreCatalog.Contract": "1.0.0",
+          "GeekBurguer.Ingredients.Contracts": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.2"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.2",
+          "Swashbuckle.AspNetCore": "2.5.0"
         },
         "runtime": {
           "Dashboard.dll": {}
         },
         "compile": {
           "Dashboard.dll": {}
+        }
+      },
+      "GeekBurger.Orders.Contract/1.0.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/GeekBurger.Orders.Contract.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp2.0/GeekBurger.Orders.Contract.dll": {}
+        }
+      },
+      "GeekBurger.Products.Contract/3.0.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll": {}
+        }
+      },
+      "GeekBurger.StoreCatalog.Contract/1.0.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll": {}
+        }
+      },
+      "GeekBurguer.Ingredients.Contracts/1.0.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/GeekBurguer.Ingredients.Contracts.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp2.0/GeekBurguer.Ingredients.Contracts.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -2790,6 +2828,64 @@
           "lib/netstandard1.5/StackExchange.Redis.StrongName.dll": {}
         }
       },
+      "Swashbuckle.AspNetCore/2.5.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "2.5.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "2.5.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "2.5.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/2.5.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "2.0.2",
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.0.2",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/2.5.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.ApiExplorer": "2.0.2",
+          "Microsoft.AspNetCore.Mvc.Core": "2.0.2",
+          "Microsoft.AspNetCore.Mvc.DataAnnotations": "2.0.2",
+          "NETStandard.Library": "2.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "2.5.0",
+          "System.Xml.XPath": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/2.5.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Routing": "2.0.1",
+          "Microsoft.AspNetCore.StaticFiles": "2.0.1",
+          "Microsoft.Extensions.FileProviders.Embedded": "2.0.0",
+          "NETStandard.Library": "2.0.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -4053,6 +4149,14 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
+      "GeekBurger.Dashboard.Contract/1.0.0": {
+        "runtime": {
+          "GeekBurger.Dashboard.Contract.dll": {}
+        },
+        "compile": {
+          "GeekBurger.Dashboard.Contract.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.0.0",
@@ -4236,6 +4340,34 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "GeekBurger.Orders.Contract/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZxPO73+6x3TzKdNZPAfnbyLPyzzFYyG0cdOxkQ3esN4wjmqsjTcHaZeZzU6J4xeRIWvWBFZMa06BdFfEiMwIvg==",
+      "path": "geekburger.orders.contract/1.0.0",
+      "hashPath": "geekburger.orders.contract.1.0.0.nupkg.sha512"
+    },
+    "GeekBurger.Products.Contract/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NDqfLaZ7ncQQ9b3MnTKnDx4xYmcRYNCxzJ3LH4seYKmESFO9KwARBhXpeFUbzk4RzmD1PkOwGBqB0tjGQsfQHQ==",
+      "path": "geekburger.products.contract/3.0.0",
+      "hashPath": "geekburger.products.contract.3.0.0.nupkg.sha512"
+    },
+    "GeekBurger.StoreCatalog.Contract/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fyPNNSf0cFtxqRMkUfeXtfNFTnk+JDGeH3YblPyUTXDZ3vLbA9J2r6+L+lsrFSzk+4KJTuoeb2Lag6+BdPHbMQ==",
+      "path": "geekburger.storecatalog.contract/1.0.0",
+      "hashPath": "geekburger.storecatalog.contract.1.0.0.nupkg.sha512"
+    },
+    "GeekBurguer.Ingredients.Contracts/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9++gqzxiyv7CTyL+2dtlu1bS6IATE5iJ7uH+uOeVVwFsL6J1KwXdZ2MBeYqe6LyF1Xiq9i9/qU7t31iZe556xA==",
+      "path": "geekburguer.ingredients.contracts/1.0.0",
+      "hashPath": "geekburguer.ingredients.contracts.1.0.0.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -5665,6 +5797,34 @@
       "path": "stackexchange.redis.strongname/1.2.4",
       "hashPath": "stackexchange.redis.strongname.1.2.4.nupkg.sha512"
     },
+    "Swashbuckle.AspNetCore/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MDGQGeHQbQrEfto4hQt4CuolBz6szWLxpDXaQMV4xHV2bBnrYDcu25fF2rdqvnGiQlUbhw4pSXHOesUx+3/iow==",
+      "path": "swashbuckle.aspnetcore/2.5.0",
+      "hashPath": "swashbuckle.aspnetcore.2.5.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Swagger/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u7QeHMOlxP6aqTwdlDantmChT7zzg90WI3m4Cy8oRVgPKss3uZBjvweDMIHxkMUsvt6Bt6EyiWBWyndYEEyyzA==",
+      "path": "swashbuckle.aspnetcore.swagger/2.5.0",
+      "hashPath": "swashbuckle.aspnetcore.swagger.2.5.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ox81z9CNerBFOFPW3spwQExoz/Lc3DoKfaJgvlC4oFJExelQ8skfgvAA1tURu9Ltbihg+BPDJS9ANfi6NAmWkw==",
+      "path": "swashbuckle.aspnetcore.swaggergen/2.5.0",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.2.5.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Vl/b/evziaRvdgA2VYf58PLdQnZyEhtSE1cBikwgORXexnAjeSHGb9ksgQLd8ZvTUD7hTYjnbXQHuKCYe2S3zA==",
+      "path": "swashbuckle.aspnetcore.swaggerui/2.5.0",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.2.5.0.nupkg.sha512"
+    },
     "System.AppContext/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -6364,6 +6524,11 @@
       "sha512": "sha512-W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "path": "windowsazure.storage/8.1.4",
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
+    },
+    "GeekBurger.Dashboard.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.NETCore.App/2.0.0": {
       "type": "package",

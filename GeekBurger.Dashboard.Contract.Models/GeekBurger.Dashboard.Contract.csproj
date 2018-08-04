@@ -6,8 +6,4 @@
     <Description>GeekBurger Dashboard Microservice Contract</Description>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Negocio\" />
-  </ItemGroup>
-
 </Project>

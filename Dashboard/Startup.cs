@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
+using Dashboard.Services;
 
 namespace Dashboard
 {
@@ -22,15 +23,22 @@ namespace Dashboard
             //.AddFormatterMappings()
             //.AddJsonFormatters()
             //.AddCors();
+            
 
             services.AddCors();
             services.AddMvc();
 
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info { Title = "Products", Version = "v1" });
-                c.IncludeXmlComments(@"bin\x64\Debug\netcoreapp2.0\Dashboard.xml");
-            });
+            ServiceBusReceive serviceBus = new ServiceBusReceive();
+
+            serviceBus.ReceiveAsync("8048e9ec-80fe-4bad-bc2a-e4f4a75c834e");
+
+            //Services.ServiceBusReceive.ReceiveAsync("8048e9ec-80fe-4bad-bc2a-e4f4a75c834e");
+
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new Info { Title = "Dashboard", Version = "v1" });
+            //    //c.IncludeXmlComments(@"bin\x64\Debug\netcoreapp2.0\Dashboard.xml");
+            //});
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -40,13 +48,13 @@ namespace Dashboard
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseSwagger();
+            //app.UseSwagger();
 
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                c.RoutePrefix = string.Empty;
-            });
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            //    c.RoutePrefix = string.Empty;
+            //});
             app.UseMvc();
         }
     }

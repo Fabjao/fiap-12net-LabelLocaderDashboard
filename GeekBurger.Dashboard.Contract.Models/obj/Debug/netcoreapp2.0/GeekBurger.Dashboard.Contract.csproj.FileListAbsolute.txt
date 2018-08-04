@@ -6,3 +6,11 @@ D:\RBilar\fiap-12net-LabelLocaderDashboard-master\GeekBurger.Dashboard.Contract.
 D:\RBilar\fiap-12net-LabelLocaderDashboard-master\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.AssemblyInfo.cs
 D:\RBilar\fiap-12net-LabelLocaderDashboard-master\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll
 D:\RBilar\fiap-12net-LabelLocaderDashboard-master\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.pdb
+D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\bin\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.deps.json
+D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\bin\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll
+D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\bin\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.pdb
+D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.csproj.CoreCompileInputs.cache
+D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.AssemblyInfoInputs.cache
+D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.AssemblyInfo.cs
+D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll
+D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.pdb

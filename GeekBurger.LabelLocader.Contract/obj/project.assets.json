@@ -12540,23 +12540,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\33531106821\\.nuget\\packages\\": {},
+    "C:\\Users\\logonrmlocal\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\TEMP\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj",
+      "projectUniqueName": "D:\\RBilar\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj",
       "projectName": "GeekBurger.LabelLocader.Contract",
-      "projectPath": "C:\\TEMP\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj",
-      "packagesPath": "C:\\Users\\33531106821\\.nuget\\packages\\",
-      "outputPath": "C:\\TEMP\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\obj\\",
+      "projectPath": "D:\\RBilar\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj",
+      "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
+      "outputPath": "D:\\RBilar\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\33531106821\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\logonrmlocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12564,8 +12564,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://vmwwscdes01.cmdo.policiamilitar.sp.gov.br/Pmesp.NuGet/nuget/": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nugetfiap12.azurewebsites.net/nuget": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
