@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>GeekBurger Dashboard Microservice Contract</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Negocio\" />
+  </ItemGroup>
+
+</Project>

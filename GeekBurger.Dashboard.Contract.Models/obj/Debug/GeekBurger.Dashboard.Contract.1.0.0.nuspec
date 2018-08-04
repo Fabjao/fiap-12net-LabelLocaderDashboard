@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GeekBurger.Dashboard.Contract</id>
+    <version>1.0.0</version>
+    <authors>GeekBurger.Dashboard.Contract</authors>
+    <owners>GeekBurger.Dashboard.Contract</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>GeekBurger Dashboard Microservice Contract</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\RBilar\fiap-12net-LabelLocaderDashboard-master\GeekBurger.Dashboard.Contract.Models\bin\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll" target="lib\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll" />
+  </files>
+</package>

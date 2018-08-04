@@ -2,6 +2,42 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "GeekBurger.Orders.Contract/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/GeekBurger.Orders.Contract.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/GeekBurger.Orders.Contract.dll": {}
+        }
+      },
+      "GeekBurger.Products.Contract/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll": {}
+        }
+      },
+      "GeekBurger.StoreCatalog.Contract/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll": {}
+        }
+      },
+      "GeekBurguer.Ingredients.Contracts/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.0/GeekBurguer.Ingredients.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/GeekBurguer.Ingredients.Contracts.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -3253,6 +3289,68 @@
           "lib/netstandard1.5/StackExchange.Redis.StrongName.dll": {}
         }
       },
+      "Swashbuckle.AspNetCore/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Swashbuckle.AspNetCore.Swagger": "2.5.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "2.5.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "2.5.0"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": "1.0.4",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.ApiExplorer": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.DataAnnotations": "1.0.4",
+          "NETStandard.Library": "1.6.1",
+          "Swashbuckle.AspNetCore.Swagger": "2.5.0",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Routing": "1.0.4",
+          "Microsoft.AspNetCore.StaticFiles": "1.0.4",
+          "Microsoft.Extensions.FileProviders.Embedded": "1.0.1",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4988,7 +5086,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Xml.XPath.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.dll": {}
@@ -5028,10 +5126,60 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "GeekBurger.Dashboard.Contract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/GeekBurger.Dashboard.Contract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GeekBurger.Dashboard.Contract.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "GeekBurger.Orders.Contract/1.0.0": {
+      "sha512": "ZxPO73+6x3TzKdNZPAfnbyLPyzzFYyG0cdOxkQ3esN4wjmqsjTcHaZeZzU6J4xeRIWvWBFZMa06BdFfEiMwIvg==",
+      "type": "package",
+      "path": "geekburger.orders.contract/1.0.0",
+      "files": [
+        "geekburger.orders.contract.1.0.0.nupkg.sha512",
+        "geekburger.orders.contract.nuspec",
+        "lib/netcoreapp2.0/GeekBurger.Orders.Contract.dll"
+      ]
+    },
+    "GeekBurger.Products.Contract/3.0.0": {
+      "sha512": "NDqfLaZ7ncQQ9b3MnTKnDx4xYmcRYNCxzJ3LH4seYKmESFO9KwARBhXpeFUbzk4RzmD1PkOwGBqB0tjGQsfQHQ==",
+      "type": "package",
+      "path": "geekburger.products.contract/3.0.0",
+      "files": [
+        "geekburger.products.contract.3.0.0.nupkg.sha512",
+        "geekburger.products.contract.nuspec",
+        "lib/netcoreapp2.0/GeekBurger.Products.Contract.dll"
+      ]
+    },
+    "GeekBurger.StoreCatalog.Contract/1.0.0": {
+      "sha512": "fyPNNSf0cFtxqRMkUfeXtfNFTnk+JDGeH3YblPyUTXDZ3vLbA9J2r6+L+lsrFSzk+4KJTuoeb2Lag6+BdPHbMQ==",
+      "type": "package",
+      "path": "geekburger.storecatalog.contract/1.0.0",
+      "files": [
+        "geekburger.storecatalog.contract.1.0.0.nupkg.sha512",
+        "geekburger.storecatalog.contract.nuspec",
+        "lib/netcoreapp2.0/GeekBurger.StoreCatalog.Contract.dll"
+      ]
+    },
+    "GeekBurguer.Ingredients.Contracts/1.0.0": {
+      "sha512": "9++gqzxiyv7CTyL+2dtlu1bS6IATE5iJ7uH+uOeVVwFsL6J1KwXdZ2MBeYqe6LyF1Xiq9i9/qU7t31iZe556xA==",
+      "type": "package",
+      "path": "geekburguer.ingredients.contracts/1.0.0",
+      "files": [
+        "geekburguer.ingredients.contracts.1.0.0.nupkg.sha512",
+        "geekburguer.ingredients.contracts.nuspec",
+        "lib/netcoreapp2.0/GeekBurguer.Ingredients.Contracts.dll"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -7565,10 +7713,10 @@
       "path": "microsoft.netcore.platforms/2.0.0",
       "files": [
         "LICENSE.TXT",
-        "Microsoft.NETCore.Platforms.2.0.0.nupkg.sha512",
-        "Microsoft.NETCore.Platforms.nuspec",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -8429,6 +8577,56 @@
         "lib/netstandard1.5/StackExchange.Redis.StrongName.xml",
         "stackexchange.redis.strongname.1.2.4.nupkg.sha512",
         "stackexchange.redis.strongname.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore/2.5.0": {
+      "sha512": "MDGQGeHQbQrEfto4hQt4CuolBz6szWLxpDXaQMV4xHV2bBnrYDcu25fF2rdqvnGiQlUbhw4pSXHOesUx+3/iow==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/2.5.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.dll",
+        "swashbuckle.aspnetcore.2.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/2.5.0": {
+      "sha512": "u7QeHMOlxP6aqTwdlDantmChT7zzg90WI3m4Cy8oRVgPKss3uZBjvweDMIHxkMUsvt6Bt6EyiWBWyndYEEyyzA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/2.5.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.2.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/2.5.0": {
+      "sha512": "Ox81z9CNerBFOFPW3spwQExoz/Lc3DoKfaJgvlC4oFJExelQ8skfgvAA1tURu9Ltbihg+BPDJS9ANfi6NAmWkw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/2.5.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "swashbuckle.aspnetcore.swaggergen.2.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/2.5.0": {
+      "sha512": "Vl/b/evziaRvdgA2VYf58PLdQnZyEhtSE1cBikwgORXexnAjeSHGb9ksgQLd8ZvTUD7hTYjnbXQHuKCYe2S3zA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/2.5.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "swashbuckle.aspnetcore.swaggerui.2.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -13113,13 +13311,24 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "GeekBurger.Dashboard.Contract/1.0.0": {
+      "type": "project",
+      "path": "../GeekBurger.Dashboard.Contract.Models/GeekBurger.Dashboard.Contract.csproj",
+      "msbuildProject": "../GeekBurger.Dashboard.Contract.Models/GeekBurger.Dashboard.Contract.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "GeekBurger.Dashboard.Contract >= 1.0.0",
+      "GeekBurger.Orders.Contract >= 1.0.0",
+      "GeekBurger.Products.Contract >= 3.0.0",
+      "GeekBurger.StoreCatalog.Contract >= 1.0.0",
+      "GeekBurguer.Ingredients.Contracts >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.2"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.2",
+      "Swashbuckle.AspNetCore >= 2.5.0"
     ]
   },
   "packageFolders": {
@@ -13147,11 +13356,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nugetfiap12.azurewebsites.net/nuget": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj": {
+              "projectPath": "D:\\12NET\\sabado\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -13163,6 +13377,22 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "GeekBurger.Orders.Contract": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "GeekBurger.Products.Contract": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "GeekBurger.StoreCatalog.Contract": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "GeekBurguer.Ingredients.Contracts": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "[2.0.5, )"
@@ -13175,6 +13405,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.0.2, )"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[2.5.0, )"
           }
         },
         "imports": [
