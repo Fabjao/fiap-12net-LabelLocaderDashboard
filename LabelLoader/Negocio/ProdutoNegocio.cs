@@ -7,14 +7,21 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace LabelLoader.Negocio
 {
     /// <summary>
     /// Classe onde vai ser implementado as regras de negocio
     /// </summary>
-    public class ProdutoNegocio
+    public class ProdutoNegocio : IProdutoNegocio
     {
+        private IServiceBus _serviceBus;
+
+        public ProdutoNegocio(IServiceBus serviceBus)
+        {
+            _serviceBus = serviceBus;
+        }
 
         public static IConfiguration Configuration { get; set; }
 
@@ -23,7 +30,7 @@ namespace LabelLoader.Negocio
         /// # A leitura das imagens só seram feitas nos arquivos do tipo: JPEG, PNG, GIF, BMP
         /// </summary>
         /// <returns></returns>
-        public Operacao ListaDeProduto()
+        public async Task<Operacao> ListaDeProduto()
         {
             var operacao = new Operacao() { Sucesso = true };
 
@@ -94,6 +101,7 @@ namespace LabelLoader.Negocio
                         });
                     }
                 }
+                await _serviceBus.SendMessageAsync(produtos);
                 operacao.Mensagem = JsonConvert.SerializeObject(produtos);
                 return operacao;
             }
