@@ -1,6 +1,4 @@
-﻿using LabelLoader.Negocio;
-using Microsoft.AspNetCore.Mvc;
-using System.Text;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace LabelLoader.Controllers
 {
@@ -10,29 +8,6 @@ namespace LabelLoader.Controllers
     [Route("api/labelLoader")]
     public class LabelController : Controller
     {
-        private ProdutoNegocio _produtoNegocio;
-
-        /// <summary>
-        /// Criar um novo objeto do produtoNegogio
-        /// </summary>
-        public LabelController()
-        {
-            _produtoNegocio = new ProdutoNegocio();
-        }
-
-        /// <summary>
-        /// Lista de produtos com os ingredientes
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        [Route("produtosIngredientes")]
-        public IActionResult LabelImageAdded()
-        {
-            var operacao = _produtoNegocio.ListaDeProduto();
-            if (operacao.Sucesso)
-                return Ok(operacao);
-            else
-                return NotFound(operacao);
-        }
+        
     }  
 }
