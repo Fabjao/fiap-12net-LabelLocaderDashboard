@@ -24,7 +24,7 @@ namespace LabelLoader.Negocio
 
             var config = _configuration.GetSection("serviceBus").Get<Model.ServiceBusConfiguration>();
 
-            var topicClient = new TopicClient(config.ConnectionString, "LabelImageAdded");
+            var topicClient = new TopicClient(config.ConnectionString, "meuprimeirotopico");
 
             Message message = new Message();
             
