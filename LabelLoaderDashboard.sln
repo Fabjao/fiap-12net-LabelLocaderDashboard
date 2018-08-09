@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekBurger.LabelLoader.Cont
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekBurger.Dashboard.Contract", "GeekBurger.Dashboard.Contract.Models\GeekBurger.Dashboard.Contract.csproj", "{B49F5F84-863D-440B-9014-08AD2F1B36CB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicReciveMesage", "..\AzureServiceBus\TopicReciveMesage\TopicReciveMesage.csproj", "{A500CDBB-5780-4F29-8558-A9691C9E80A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopicReciveMesage", "TopicReciveMesage\TopicReciveMesage.csproj", "{4DAEFB12-6FED-4144-B459-DF6A99CBFE8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,14 +53,14 @@ Global
 		{B49F5F84-863D-440B-9014-08AD2F1B36CB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B49F5F84-863D-440B-9014-08AD2F1B36CB}.Release|x64.ActiveCfg = Release|Any CPU
 		{B49F5F84-863D-440B-9014-08AD2F1B36CB}.Release|x64.Build.0 = Release|Any CPU
-		{A500CDBB-5780-4F29-8558-A9691C9E80A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A500CDBB-5780-4F29-8558-A9691C9E80A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A500CDBB-5780-4F29-8558-A9691C9E80A6}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{A500CDBB-5780-4F29-8558-A9691C9E80A6}.Debug|x64.Build.0 = Debug|Any CPU
-		{A500CDBB-5780-4F29-8558-A9691C9E80A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A500CDBB-5780-4F29-8558-A9691C9E80A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A500CDBB-5780-4F29-8558-A9691C9E80A6}.Release|x64.ActiveCfg = Release|Any CPU
-		{A500CDBB-5780-4F29-8558-A9691C9E80A6}.Release|x64.Build.0 = Release|Any CPU
+		{4DAEFB12-6FED-4144-B459-DF6A99CBFE8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DAEFB12-6FED-4144-B459-DF6A99CBFE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DAEFB12-6FED-4144-B459-DF6A99CBFE8B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4DAEFB12-6FED-4144-B459-DF6A99CBFE8B}.Debug|x64.Build.0 = Debug|Any CPU
+		{4DAEFB12-6FED-4144-B459-DF6A99CBFE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DAEFB12-6FED-4144-B459-DF6A99CBFE8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DAEFB12-6FED-4144-B459-DF6A99CBFE8B}.Release|x64.ActiveCfg = Release|Any CPU
+		{4DAEFB12-6FED-4144-B459-DF6A99CBFE8B}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
