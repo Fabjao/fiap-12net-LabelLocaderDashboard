@@ -13023,11 +13023,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\RBilar\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
+      "projectUniqueName": "C:\\Users\\logonrmlocal\\Downloads\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
       "projectName": "LabelLoader",
-      "projectPath": "D:\\RBilar\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
+      "projectPath": "C:\\Users\\logonrmlocal\\Downloads\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\LabelLoader.csproj",
       "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-      "outputPath": "D:\\RBilar\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\obj\\",
+      "outputPath": "C:\\Users\\logonrmlocal\\Downloads\\fiap-12net-LabelLocaderDashboard\\LabelLoader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13041,14 +13041,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nugetfiap12.azurewebsites.net/nuget": {}
+        "http://nugetfiap12.azurewebsites.net/nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\RBilar\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj": {
-              "projectPath": "D:\\RBilar\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj"
+            "C:\\Users\\logonrmlocal\\Downloads\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj": {
+              "projectPath": "C:\\Users\\logonrmlocal\\Downloads\\fiap-12net-LabelLocaderDashboard\\GeekBurger.LabelLocader.Contract\\GeekBurger.LabelLocader.Contract.csproj"
             }
           }
         }

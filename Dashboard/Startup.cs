@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 using Dashboard.Services;
+using Microsoft.EntityFrameworkCore;
+using Dashboard.Context;
 
 namespace Dashboard
 {
@@ -23,7 +25,8 @@ namespace Dashboard
             //.AddFormatterMappings()
             //.AddJsonFormatters()
             //.AddCors();
-            
+
+            services.AddDbContext<Contexto>(opt=>opt.UseInMemoryDatabase());
 
             services.AddCors();
             services.AddMvc();
@@ -41,12 +44,22 @@ namespace Dashboard
             //});
         }
 
+    
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+
+
+            //loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            //loggerFactory.AddDebug();
+
+            var context = app.ApplicationServices.GetService<Contexto>();
+            //AddTestData(context);
+
 
             //app.UseSwagger();
 

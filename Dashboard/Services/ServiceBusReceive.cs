@@ -10,15 +10,24 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Dashboard.ViewModel;
+using Microsoft.EntityFrameworkCore;
+using Dashboard.Context;
+
 
 namespace Dashboard.Services
 {
+   
+
     public class ServiceBusReceive
     {
         private static Microsoft.Azure.ServiceBus.SubscriptionClient _subscriptionClient { get; set; }
+        private static Microsoft.Azure.ServiceBus.SubscriptionClient _subscriptionClient1 { get; set; }
         private static string _queueConnectionString { get; set; }
         private static string _storeId { get; set; }
 
+
+        //ublic static Contexto _context;
         public void ReceiveAsync(string storeId)
         {
             _storeId = storeId;
@@ -35,12 +44,19 @@ namespace Dashboard.Services
 
             var ret = GetServiceBusNamespace(_configuration);
 
-            if(!ret.Topics.GetByName("ProductChanged").Subscriptions.List().Any(_ => _.Name == "DashBoard"))
+            if(!ret.Topics.GetByName("OrderChanged").Subscriptions.List().Any(_ => _.Name == "DashBoard"))
             {
-                ret.Topics.GetByName("ProductChanged").Subscriptions.Define("Dashboard").Create();
+                ret.Topics.GetByName("OrderChanged").Subscriptions.Define("Dashboard").Create();
             }
 
-            _subscriptionClient = new Microsoft.Azure.ServiceBus.SubscriptionClient(_queueConnectionString, "ProductChanged", "DashBoard");
+            //if (!ret.Topics.GetByName("UserWithLessOffer").Subscriptions.List().Any(_ => _.Name == "DashBoard"))
+            //{
+            //    ret.Topics.GetByName("UserWithLessOffer").Subscriptions.Define("Dashboard").Create();
+            //}
+
+            _subscriptionClient = new Microsoft.Azure.ServiceBus.SubscriptionClient(_queueConnectionString, "OrderChanged", "DashBoard");
+
+            //_subscriptionClient1 = new Microsoft.Azure.ServiceBus.SubscriptionClient(_queueConnectionString, "UserWithLessOffer", "DashBoard");
 
             var handlerOptions = new MessageHandlerOptions(ExceptionHandler)
             {
@@ -49,6 +65,7 @@ namespace Dashboard.Services
             };
 
             _subscriptionClient.RegisterMessageHandler(MessageHandler, handlerOptions);
+            //_subscriptionClient1.RegisterMessageHandler(MessageHandler, handlerOptions);
         }
 
         private static Task ExceptionHandler(ExceptionReceivedEventArgs arg)
@@ -61,9 +78,42 @@ namespace Dashboard.Services
 
         private static async Task MessageHandler(Message message, CancellationToken cancellationToken)
         {
+            DbContextOptions<Contexto> options;
+
+            var builder = new DbContextOptionsBuilder<Contexto>();
+            builder.UseInMemoryDatabase();
+            options = builder.Options;
+
+            List<OrderChangedViewModel> listaOrderChanged = new List<OrderChangedViewModel>();
+            OrderChangedViewModel teste = new OrderChangedViewModel();
             if (message.Label != _storeId)
             {
-                Console.WriteLine($"Message From Store:{message.Label} with id {message.MessageId} not processed");
+                var orderChange =  Encoding.UTF8.GetString(message.Body);
+
+               OrderChangedViewModel teste1 = JsonConvert.DeserializeObject<OrderChangedViewModel>(orderChange);
+
+                if(teste1.OrderId != 0)
+                {
+                   
+
+                    OrderChanged OrderChangedContext = new OrderChanged();
+
+                    OrderChangedContext.OrderId = teste1.OrderId;
+                    OrderChangedContext.State = teste1.State;
+                    OrderChangedContext.StoredId = teste1.StoredId;
+                    OrderChangedContext.Value = teste1.Value;
+
+
+                   // var author = new OrderChanged { Id = 1, FirstName = "Joydip", LastName = "Kanjilal" };
+                    using (var context = new Contexto(options))
+                    {
+                        context.Authors.Add(author);
+                        context.SaveChanges();
+                    }
+
+                }
+
+                Console.WriteLine($"Message From Store:{message.Label} with id {message.MessageId} not processed {orderChange.ToString()}");
                 return;
             }
 

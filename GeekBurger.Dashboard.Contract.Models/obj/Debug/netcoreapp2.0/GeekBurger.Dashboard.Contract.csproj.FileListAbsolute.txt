@@ -14,3 +14,12 @@ D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\
 D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.AssemblyInfo.cs
 D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll
 D:\RBilar\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.pdb
+C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\bin\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.deps.json
+C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\bin\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll
+C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\bin\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.pdb
+C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.csprojAssemblyReference.cache
+C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.csproj.CoreCompileInputs.cache
+C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.AssemblyInfoInputs.cache
+C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.AssemblyInfo.cs
+C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll
+C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\GeekBurger.Dashboard.Contract.Models\obj\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.pdb
