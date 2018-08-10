@@ -13332,23 +13332,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fabio\\.nuget\\packages\\": {},
+    "C:\\Users\\logonrmlocal\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projeto\\MicroServico\\20180808\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
+      "projectUniqueName": "D:\\Microservico\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
       "projectName": "Dashboard",
-      "projectPath": "C:\\Projeto\\MicroServico\\20180808\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
-      "packagesPath": "C:\\Users\\Fabio\\.nuget\\packages\\",
-      "outputPath": "C:\\Projeto\\MicroServico\\20180808\\fiap-12net-LabelLocaderDashboard\\Dashboard\\obj\\",
+      "projectPath": "D:\\Microservico\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
+      "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
+      "outputPath": "D:\\Microservico\\fiap-12net-LabelLocaderDashboard\\Dashboard\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\logonrmlocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13362,8 +13362,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Projeto\\MicroServico\\20180808\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj": {
-              "projectPath": "C:\\Projeto\\MicroServico\\20180808\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj"
+            "D:\\Microservico\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj": {
+              "projectPath": "D:\\Microservico\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj"
             }
           }
         }

@@ -1,4 +1,5 @@
-﻿using LabelLoader.Negocio;
+﻿using LabelLoader.Logger;
+using LabelLoader.Negocio;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -36,6 +37,7 @@ namespace LabelLoader
 
             services.AddSingleton<IProdutoNegocio, ProdutoNegocio>();
             services.AddSingleton<IServiceBus, ServiceBus>();
+            services.AddSingleton<ILogServiceBus, LogServiceBus>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

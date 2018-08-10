@@ -6,6 +6,7 @@
     using System.Threading;
     using System.Threading.Tasks;
     using Microsoft.Azure.ServiceBus;
+    using Microsoft.Extensions.Configuration;
     using Newtonsoft.Json;
 
     class Program
@@ -80,5 +81,7 @@
             Console.WriteLine($"- Executing Action: {context.Action}");
             return Task.CompletedTask;
         }
+             
     }
+    
 }

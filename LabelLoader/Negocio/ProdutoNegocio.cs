@@ -1,4 +1,5 @@
 ﻿using GeekBurger.LabelLocader.Contract.Models;
+using LabelLoader.Logger;
 using Microsoft.Extensions.Configuration;
 using Microsoft.ProjectOxford.Vision;
 using Microsoft.ProjectOxford.Vision.Contract;
@@ -17,13 +18,15 @@ namespace LabelLoader.Negocio
     public class ProdutoNegocio : IProdutoNegocio
     {
         private IServiceBus _serviceBus;
+        private IConfiguration _configuration;
+        private ILogServiceBus _logServiceBus;
 
-        public ProdutoNegocio(IServiceBus serviceBus)
+        public ProdutoNegocio(IServiceBus serviceBus, IConfiguration configuration, ILogServiceBus logServiceBus)
         {
             _serviceBus = serviceBus;
+            _configuration = configuration;
+            _logServiceBus = logServiceBus;
         }
-
-        public static IConfiguration Configuration { get; set; }
 
         /// <summary>
         /// Vai passar pelo diretorio da aplicação e usar o cognitive vision para tratar as imagens
@@ -38,18 +41,17 @@ namespace LabelLoader.Negocio
             {
 
                 List<Produto> produtos = new List<Produto>();
-                var builder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
-                Configuration = builder.Build();
-                var chave = Configuration["ChaveAPIVIsion1.0"];
-                var urlVision = Configuration["URLAPIVision"];
+
+                var chave = _configuration.GetValue<string>("ChaveAPIVIsion1.0");
+                var urlVision = _configuration.GetValue<string>("URLAPIVision");
 
                 var visionServiceClient = new VisionServiceClient(chave, urlVision);
 
-
+                await _logServiceBus.SendMessagesAsync("Buscando as imagens no diretorio");
                 DirectoryInfo dir = new DirectoryInfo($"{Directory.GetCurrentDirectory()}{@"\wwwroot\Imagens"}");
-                var tipoImagens = Configuration["TipoImagem"].Split(',');
+                var tipoImagens = _configuration.GetValue<string>("TipoImagem").Split(',');
                 OcrResults results;
-                var blacklist = Configuration["BlackList"].Split(',');
+                var blacklist = _configuration.GetValue<string>("BlackList").Split(',');
 
                 //Filtro para pegar apenas imagens
                 var files = dir.GetFiles().Where(file => tipoImagens.Any(file.ToString().ToLower().EndsWith)).ToList();
@@ -63,7 +65,7 @@ namespace LabelLoader.Negocio
 
                     if (results.Regions.Length > 0)//Encontrou algo escrito na imagem
                     {
-
+                        await _logServiceBus.SendMessagesAsync($"Encontrou algo escrito na imagem{file.Name}");
                         var lines = results.Regions.SelectMany(region => region.Lines);
                         var words = lines.SelectMany(line => line.Words);
                         var wordsText = words.Select(word => word.Text.ToUpper());
@@ -74,7 +76,7 @@ namespace LabelLoader.Negocio
                             todasPalvras += $"{item} ";
                         }
 
-                        var substituiCarcteresPorVirgula = Configuration["substituiCarcteresPorVirgula"].Split(',');
+                        var substituiCarcteresPorVirgula = _configuration.GetValue<string>("substituiCarcteresPorVirgula").Split(',');
                         foreach (var item in substituiCarcteresPorVirgula)
                         {
                             todasPalvras = todasPalvras.Replace(item, ",");
@@ -82,6 +84,7 @@ namespace LabelLoader.Negocio
 
                         var sepadarasPorVirgula = todasPalvras.Split(',');
                         List<string> ingredientes = new List<string>();
+                        await _logServiceBus.SendMessagesAsync("Removendo palvras indesejadas");
                         foreach (var item in sepadarasPorVirgula)
                         {
                             var palavra = item;
@@ -94,6 +97,7 @@ namespace LabelLoader.Negocio
                                 ingredientes.Add(palavra.Trim());
                         }
 
+                        await _logServiceBus.SendMessagesAsync("Adicionando produto na lista de item");
                         produtos.Add(new Produto()
                         {
                             ItemName = file.Name.Replace(file.Extension, ""),
@@ -101,12 +105,14 @@ namespace LabelLoader.Negocio
                         });
                     }
                 }
+                await _logServiceBus.SendMessagesAsync("Enviando para a fila a lista de produtos");
                 await _serviceBus.SendMessageAsync(produtos);
                 operacao.Mensagem = JsonConvert.SerializeObject(produtos);
                 return operacao;
             }
             catch (System.Exception ex)
             {
+                await _logServiceBus.SendMessagesAsync($"Deu algo errado{ex.Message}");
                 operacao.Sucesso = false;
                 operacao.Mensagem = "Erro ao processar as Imagens, tente novamente após 1 minuto";                
                 return operacao;

@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <PackageReference Include="GeekBurger.LabelLoader.Contract" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Azure.Management.ServiceBus" Version="1.4.0" />
+    <PackageReference Include="Microsoft.Azure.Management.ServiceBus.Fluent" Version="1.14.0" />
     <PackageReference Include="Microsoft.Azure.ServiceBus" Version="3.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>

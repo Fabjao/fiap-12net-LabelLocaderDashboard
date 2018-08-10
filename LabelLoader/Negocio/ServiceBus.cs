@@ -1,4 +1,5 @@
 ﻿using GeekBurger.LabelLocader.Contract.Models;
+using LabelLoader.Logger;
 using Microsoft.Azure.ServiceBus;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
@@ -14,9 +15,12 @@ namespace LabelLoader.Negocio
     public class ServiceBus : IServiceBus
     {
         private readonly IConfiguration _configuration;
-        public ServiceBus(IConfiguration configuration)
+        private readonly ILogServiceBus _logServiceBus;
+
+        public ServiceBus(IConfiguration configuration, ILogServiceBus logServiceBus)
         {
             _configuration = configuration;
+            _logServiceBus = logServiceBus;
         }
 
         public async Task<bool> SendMessageAsync(List<Produto> produtos)
@@ -24,7 +28,7 @@ namespace LabelLoader.Negocio
 
             var config = _configuration.GetSection("serviceBus").Get<Model.ServiceBusConfiguration>();
 
-            var topicClient = new TopicClient(config.ConnectionString, "meuprimeirotopico");
+            var topicClient = new TopicClient(config.ConnectionString, "LabelImageAdded");
 
             Message message = new Message();
             
@@ -32,7 +36,7 @@ namespace LabelLoader.Negocio
             message.Body = Encoding.UTF8.GetBytes(json);
       
             await topicClient.SendAsync(message);
-
+            await _logServiceBus.SendMessagesAsync("mensagem enviada para a fila");
             await topicClient.CloseAsync();
 
             return true;
