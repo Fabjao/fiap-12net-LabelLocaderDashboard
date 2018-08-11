@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -49,16 +50,22 @@ namespace Dashboard.Services
 
         private static async Task ProcessMessagesAsync(Message message, CancellationToken cancellationToken)
         {
-            var json = Encoding.UTF8.GetString(message.Body);            
-            var userWithLessOffer = JsonConvert.DeserializeObject<UserFoodRestriction>(json);
+            var json = Encoding.UTF8.GetString(message.Body);
 
-            DbContextOptionsBuilder DbContextOptionsBuilder = new DbContextOptionsBuilder<DashboardDB>();
+            var userFoodRestriction = JsonConvert.DeserializeObject<UserFoodRestriction>(json);
 
-            using (var context = new DashboardDB(DbContextOptionsBuilder.Options))
+            if (userFoodRestriction.Restrictions.Count() > 0)
             {
-                context.UserFoodRestriction.Add(userWithLessOffer);
-                context.SaveChanges();
+                DbContextOptionsBuilder DbContextOptionsBuilder = new DbContextOptionsBuilder<DashboardDB>();
+
+                using (var context = new DashboardDB(DbContextOptionsBuilder.Options))
+                {
+                    //context.FoodRestrictions.Add(new Models.FoodRestriction { UserId = userFoodRestriction.UserId, Restrictions = string.Join(", ", userFoodRestriction.Restrictions.OrderBy(p => p)) }); #FIX - User API
+                    context.FoodRestrictions.Add(new Models.FoodRestriction { UserId = new Random().Next(1, 99999), Restrictions = string.Join(", ", "soja,leite,pimenta,mel,carne".Split(",").OrderBy(p => p )) });
+                    context.SaveChanges();
+                }
             }
+
 
             Console.WriteLine($"Received message: SequenceNumber:{message.SystemProperties.SequenceNumber} Body:{Encoding.UTF8.GetString(message.Body)}");
 

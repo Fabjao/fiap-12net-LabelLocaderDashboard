@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Dashboard.Mock
+namespace Dashboard.Models
 {
-    public class OrderChanged
+    public class Order
     {
-        public OrderChanged() { }
+        public Order() { }
 
         public int OrderId { get; set; }
         public int StoreId { get; set; }
-        public GeekBurger.Orders.Contract.Enums.OrderState State { get; set; }
         public decimal Value { get; set; }
+        public DateTime Date { get; set; }
 
     }
 }

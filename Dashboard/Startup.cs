@@ -21,7 +21,7 @@ namespace Dashboard
             .AddJsonFormatters()
             .AddCors();
 
-            services.AddDbContext<DashboardDB>();
+            services.AddDbContext<DashboardDB>(opt => opt.UseInMemoryDatabase());
             services.AddCors();
             services.AddMvc();
 

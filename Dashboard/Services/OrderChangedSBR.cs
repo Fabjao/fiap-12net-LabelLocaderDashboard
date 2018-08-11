@@ -1,4 +1,5 @@
 ﻿using Dashboard.Context;
+using GeekBurger.Orders.Contract.Enums;
 using GeekBurger.Orders.Contract.Messages;
 using Microsoft.Azure.ServiceBus;
 using Microsoft.EntityFrameworkCore;
@@ -51,28 +52,16 @@ namespace Dashboard.Services
         {
             var json = Encoding.UTF8.GetString(message.Body);
 
-            try
+            var order = JsonConvert.DeserializeObject<OrderChangedMessage>(json);
+
+            if (order.State == OrderState.Paid)
             {
-                var orderChanged = JsonConvert.DeserializeObject<OrderChangedMessage>(json);
-                
                 DbContextOptionsBuilder DbContextOptionsBuilder = new DbContextOptionsBuilder<DashboardDB>();
 
                 using (var context = new DashboardDB(DbContextOptionsBuilder.Options))
                 {
-                    context.OrderChanged.Add(orderChanged);
-                    context.SaveChanges();
-                }
-            }
-            catch (Exception)
-            {
-                json = json.Replace("Paid|Canceled|Finished", "Finished"); // Fix - only one status pls!
-                var mockedOrderChanged = JsonConvert.DeserializeObject<Mock.OrderChanged>(json);
-
-                DbContextOptionsBuilder DbContextOptionsBuilder = new DbContextOptionsBuilder<DashboardDB>();
-
-                using (var context = new DashboardDB(DbContextOptionsBuilder.Options))
-                {
-                    context.MockedOrderChanged.Add(mockedOrderChanged);
+                    //context.Orders.Add(new Models.Order { StoreId = order.StoreId, OrderId = order.OrderId, Value = order.Value = DateTime.Now }); #FIX - Order API
+                    context.Orders.Add(new Models.Order { StoreId = new Random().Next(1, 3), OrderId = new Random().Next(1, 99999), Value = new Random().Next(1, 100), Date = DateTime.Now });
                     context.SaveChanges();
                 }
             }
