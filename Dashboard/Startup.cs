@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Dashboard.Context;
+using Dashboard.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
+using Microsoft.Azure.ServiceBus;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
-using Dashboard.Services;
-using Microsoft.EntityFrameworkCore;
-using Dashboard.Context;
 
 namespace Dashboard
 {
@@ -20,31 +15,26 @@ namespace Dashboard
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            //var mvcCoreBuilder = services.AddMvcCore();
-            //mvcCoreBuilder
-            //.AddFormatterMappings()
-            //.AddJsonFormatters()
-            //.AddCors();
+            var mvcCoreBuilder = services.AddMvcCore();
+            mvcCoreBuilder
+            .AddFormatterMappings()
+            .AddJsonFormatters()
+            .AddCors();
 
-            services.AddDbContext<Contexto>(opt=>opt.UseInMemoryDatabase());
-
+            services.AddDbContext<DashboardDB>();
             services.AddCors();
             services.AddMvc();
 
-            ServiceBusReceive serviceBus = new ServiceBusReceive();
+            Services.OrderChangedSBR.ReceiveAsync();
+            Services.UserWithLessOffer.ReceiveAsync();
 
-            serviceBus.ReceiveAsync("8048e9ec-80fe-4bad-bc2a-e4f4a75c834e");
-
-            //Services.ServiceBusReceive.ReceiveAsync("8048e9ec-80fe-4bad-bc2a-e4f4a75c834e");
-
-            //services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new Info { Title = "Dashboard", Version = "v1" });
-            //    //c.IncludeXmlComments(@"bin\x64\Debug\netcoreapp2.0\Dashboard.xml");
-            //});
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v2", new Info { Title = "Dashboard", Version = "v2" });
+            });
         }
 
-    
+
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -52,22 +42,15 @@ namespace Dashboard
                 app.UseDeveloperExceptionPage();
             }
 
-
-
             //loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             //loggerFactory.AddDebug();
 
-            var context = app.ApplicationServices.GetService<Contexto>();
-            //AddTestData(context);
-
-
-            //app.UseSwagger();
-
-            //app.UseSwaggerUI(c =>
-            //{
-            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-            //    c.RoutePrefix = string.Empty;
-            //});
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "GeekBurger Dashboard API");
+                c.RoutePrefix = string.Empty;
+            });
             app.UseMvc();
         }
     }

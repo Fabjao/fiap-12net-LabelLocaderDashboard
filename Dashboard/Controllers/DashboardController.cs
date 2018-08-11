@@ -11,13 +11,6 @@ namespace Dashboard.Controllers
     [Route("api/dashboard")]
     public class DashboardController : Controller
     {
-        [Route("index")]
-        [HttpGet]
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         [Route("sales")]
         [HttpGet]
         public IActionResult Sales()
@@ -42,18 +35,11 @@ namespace Dashboard.Controllers
         [HttpGet]
         public IActionResult UsersWithLessOffer()
         {
-            List<Restriction> restrictions = new List<Restriction>();
-            restrictions.Add(new Restriction { Type = "soy,diary", Users = 2 });
-            restrictions.Add(new Restriction { Type = "gluten", Users = 8 });
-
-            User user = new User()
-            {
-                Users = 10,
-                Restrictions = restrictions,
-                Usage = 50
-            };
-
-            return Ok(user);
+            var list = new List<Restriction>();
+            list.Add(new Restriction { Users = 2, Type = "soy, diary" });
+            list.Add(new Restriction { Users = 8, Type = "gluten" });
+            
+            return Ok(list);
         }
     }
 }

@@ -9,7 +9,6 @@ namespace Dashboard.ViewModel
     {
         public int OrderId { get; set; }
         public string State { get; set; }
-
         public double Value { get; set; }
         public string StoredId  { get; set; }
     }
