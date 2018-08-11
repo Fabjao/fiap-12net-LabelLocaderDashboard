@@ -54,3 +54,17 @@ C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x
 C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.csproj.CopyComplete
 C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.dll
 C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.pdb
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.deps.json
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.runtimeconfig.json
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.runtimeconfig.dev.json
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.dll
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.pdb
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.pdb
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.csprojAssemblyReference.cache
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.csproj.CoreCompileInputs.cache
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.AssemblyInfoInputs.cache
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.AssemblyInfo.cs
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.csproj.CopyComplete
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.dll
+C:\Projeto\MicroServico\Outra\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.pdb

@@ -17,7 +17,7 @@ namespace Dashboard.Services
 {
     public class OrderChangedSBR
     {
-        private const string queueName = "OrderChanged";
+        private const string topicName = "OrderChanged";
 
         private static SubscriptionClient _subscriptionClient { get; set; }
 
@@ -32,12 +32,12 @@ namespace Dashboard.Services
 
             //Subsciption
             var serviceBusNameSpace = serviceBusConfiguration.GetServiceBusNamespace();
-            if (!serviceBusNameSpace.Topics.GetByName(queueName).Subscriptions.List().Any(_ => _.Name == "DashBoard"))
+            if (!serviceBusNameSpace.Topics.GetByName(topicName).Subscriptions.List().Any(_ => _.Name == "DashBoard"))
             {
-                serviceBusNameSpace.Topics.GetByName(queueName).Subscriptions.Define("Dashboard").Create();
+                serviceBusNameSpace.Topics.GetByName(topicName).Subscriptions.Define("Dashboard").Create();
             }
 
-            _subscriptionClient = new SubscriptionClient(serviceBusConfiguration.ConnectionString, queueName, "DashBoard");
+            _subscriptionClient = new SubscriptionClient(serviceBusConfiguration.ConnectionString, topicName, "DashBoard");
 
             var messageHandlerOptions = new MessageHandlerOptions(ExceptionReceivedHandler)
             {
