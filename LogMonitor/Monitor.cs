@@ -23,7 +23,6 @@ namespace LogMonitor
         public void Init(string topicName)
         {
             _topicName = topicName;
-            //https://github.com/Azure-Samples/service-bus-dotnet-manage-publish-subscribe-with-basic-features
 
             _configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())

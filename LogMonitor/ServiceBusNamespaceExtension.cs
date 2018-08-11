@@ -7,9 +7,7 @@ namespace Topic.Receiver.Sample
     public static class ServiceBusNamespaceExtension
     {
         public static IServiceBusNamespace GetServiceBusNamespace(this IConfiguration configuration)
-        {
-            //ref: https://tomasherceg.com/blog/post/azure-servicebus-in-net-core-managing-topics-queues-and-subscriptions-from-the-code
-
+        {            
             var config = configuration.GetSection("serviceBus").Get<ServiceBusConfiguration>();
 
             var credentials = SdkContext.AzureCredentialsFactory
