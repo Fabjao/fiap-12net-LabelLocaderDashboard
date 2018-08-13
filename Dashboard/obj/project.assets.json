@@ -13829,7 +13829,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "GeekBurger.Dashboard.Contract >= 1.0.0",
+      "GeekBurger.Dashboard.Contract >= 2.0.0",
       "GeekBurger.Orders.Contract >= 2.0.0",
       "GeekBurger.Products.Contract >= 3.0.0",
       "GeekBurger.StoreCatalog.Contract >= 1.0.1",
@@ -13847,23 +13847,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\logonrmlocal\\.nuget\\packages\\": {},
+    "C:\\Users\\Guilherme\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\logonrmlocal\\Downloads\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
+      "projectUniqueName": "C:\\Users\\Guilherme\\Documents\\Visual Studio 2017\\Projects\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
       "projectName": "Dashboard",
-      "projectPath": "C:\\Users\\logonrmlocal\\Downloads\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
-      "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\logonrmlocal\\Downloads\\fiap-12net-LabelLocaderDashboard\\Dashboard\\obj\\",
+      "projectPath": "C:\\Users\\Guilherme\\Documents\\Visual Studio 2017\\Projects\\fiap-12net-LabelLocaderDashboard\\Dashboard\\Dashboard.csproj",
+      "packagesPath": "C:\\Users\\Guilherme\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Guilherme\\Documents\\Visual Studio 2017\\Projects\\fiap-12net-LabelLocaderDashboard\\Dashboard\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\logonrmlocal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Guilherme\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13871,14 +13871,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://nugetfiap12.azurewebsites.net/nuget": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nugetfiap12.azurewebsites.net/nuget": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\logonrmlocal\\Downloads\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj": {
-              "projectPath": "C:\\Users\\logonrmlocal\\Downloads\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj"
+            "C:\\Users\\Guilherme\\Documents\\Visual Studio 2017\\Projects\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj": {
+              "projectPath": "C:\\Users\\Guilherme\\Documents\\Visual Studio 2017\\Projects\\fiap-12net-LabelLocaderDashboard\\GeekBurger.Dashboard.Contract.Models\\GeekBurger.Dashboard.Contract.csproj"
             }
           }
         }
@@ -13892,6 +13892,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "GeekBurger.Dashboard.Contract": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "GeekBurger.Orders.Contract": {
             "target": "Package",
             "version": "[2.0.0, )"
@@ -13963,7 +13967,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'WindowsAzure.ServiceBus 5.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "message": "O pacote 'WindowsAzure.ServiceBus 5.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v2.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "WindowsAzure.ServiceBus",
       "targetGraphs": [
         ".NETCoreApp,Version=v2.0"

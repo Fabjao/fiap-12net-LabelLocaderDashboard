@@ -9,12 +9,18 @@ namespace Dashboard.Context
 {
     public class Contexto : DbContext
     {
+        public Contexto(DbContextOptions options) : base(options) { }
+
+        public Contexto() { }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseInMemoryDatabase("InMemoryProvider");
+        }
 
 
         public DbSet<OrderChanged> OrderChanged { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            options.UseInMemoryDatabase("Dashbord");
-        }
+        public DbSet<UserWithLessOffer> UserWithLessOffer { get; set; }
+
     }
 }

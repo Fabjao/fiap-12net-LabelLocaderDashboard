@@ -26,14 +26,20 @@ namespace Dashboard
             //.AddJsonFormatters()
             //.AddCors();
 
-            services.AddDbContext<Contexto>(opt=>opt.UseInMemoryDatabase());
+            //services.AddDbContext<Contexto>(opt => opt.UseInMemoryDatabase("TestDatabase"));
 
-            services.AddCors();
             services.AddMvc();
+            services.AddCors(); 
+            
 
             ServiceBusReceive serviceBus = new ServiceBusReceive();
 
             serviceBus.ReceiveAsync("8048e9ec-80fe-4bad-bc2a-e4f4a75c834e");
+            serviceBus.ReceiveAsync("8d618778-85d7-411e-878b-846a8eef30c0");
+
+            serviceBus.ReceiveAsyncUserUsersWithLessOffer("8048e9ec-80fe-4bad-bc2a-e4f4a75c834e");
+            serviceBus.ReceiveAsyncUserUsersWithLessOffer("8d618778-85d7-411e-878b-846a8eef30c0");
+
 
             //Services.ServiceBusReceive.ReceiveAsync("8048e9ec-80fe-4bad-bc2a-e4f4a75c834e");
 
@@ -45,7 +51,7 @@ namespace Dashboard
         }
 
     
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -57,7 +63,7 @@ namespace Dashboard
             //loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             //loggerFactory.AddDebug();
 
-            var context = app.ApplicationServices.GetService<Contexto>();
+            //var context = app.ApplicationServices.GetService<Contexto>();
             //AddTestData(context);
 
 
@@ -69,6 +75,22 @@ namespace Dashboard
             //    c.RoutePrefix = string.Empty;
             //});
             app.UseMvc();
+        }
+
+        private static void AddTestData(Contexto context)
+        {
+            var valor = 10.00;
+            var testUser1 = new Context.OrderChanged
+            {
+                OrderId = 1,
+                State = "Paid",
+                StoredId = "110901091019901",
+                Value = valor
+            };
+
+            context.OrderChanged.Add(testUser1);
+
+            context.SaveChanges();
         }
     }
 }

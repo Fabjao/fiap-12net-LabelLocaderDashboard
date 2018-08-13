@@ -25,8 +25,10 @@ namespace Dashboard.Services
         private static Microsoft.Azure.ServiceBus.SubscriptionClient _subscriptionClient1 { get; set; }
         private static string _queueConnectionString { get; set; }
         private static string _storeId { get; set; }
+        //public  static Contexto _context;
 
-
+      
+       
         //ublic static Contexto _context;
         public void ReceiveAsync(string storeId)
         {
@@ -78,11 +80,12 @@ namespace Dashboard.Services
 
         private static async Task MessageHandler(Message message, CancellationToken cancellationToken)
         {
-            DbContextOptions<Contexto> options;
+            Contexto _context = new Contexto();
+            //DbContextOptions<Contexto> options;
 
-            var builder = new DbContextOptionsBuilder<Contexto>();
-            builder.UseInMemoryDatabase();
-            options = builder.Options;
+            //var builder = new DbContextOptionsBuilder<Contexto>();
+            //builder.UseInMemoryDatabase();
+            //options = builder.Options;
 
             List<OrderChangedViewModel> listaOrderChanged = new List<OrderChangedViewModel>();
             OrderChangedViewModel teste = new OrderChangedViewModel();
@@ -104,12 +107,12 @@ namespace Dashboard.Services
                     OrderChangedContext.Value = teste1.Value;
 
 
-                   // var author = new OrderChanged { Id = 1, FirstName = "Joydip", LastName = "Kanjilal" };
-                    using (var context = new Contexto(options))
-                    {
-                        context.Authors.Add(author);
-                        context.SaveChanges();
-                    }
+                    
+
+                    _context.OrderChanged.Add(OrderChangedContext);
+
+                    _context.SaveChanges();
+
 
                 }
 
@@ -126,6 +129,110 @@ namespace Dashboard.Services
 
             await _subscriptionClient.CompleteAsync(message.SystemProperties.LockToken);
         }
+
+
+        public void ReceiveAsyncUserUsersWithLessOffer(string storeId)
+        {
+            _storeId = storeId;
+
+            var serviceBusNamespace = Services.MyConfigurationRoot.GetByTag("namespaceName");
+
+
+            _queueConnectionString = Services.MyConfigurationRoot.GetByTag("connectionString");
+
+            var _configuration = new ConfigurationBuilder()
+                            .SetBasePath(Directory.GetCurrentDirectory())
+                            .AddJsonFile("appsettings.json")
+                            .Build();
+
+            var ret = GetServiceBusNamespace(_configuration);
+
+            if (!ret.Topics.GetByName("UsersWithLessOffer").Subscriptions.List().Any(_ => _.Name == "DashBoard"))
+            if (!ret.Topics.GetByName("UsersWithLessOffer").Subscriptions.List().Any(_ => _.Name == "DashBoard"))
+            {
+                ret.Topics.GetByName("UsersWithLessOffer").Subscriptions.Define("Dashboard").Create();
+            }
+
+            //if (!ret.Topics.GetByName("UserWithLessOffer").Subscriptions.List().Any(_ => _.Name == "DashBoard"))
+            //{
+            //    ret.Topics.GetByName("UserWithLessOffer").Subscriptions.Define("Dashboard").Create();
+            //}
+
+            _subscriptionClient = new Microsoft.Azure.ServiceBus.SubscriptionClient(_queueConnectionString, "UsersWithLessOffer", "DashBoard");
+
+            //_subscriptionClient1 = new Microsoft.Azure.ServiceBus.SubscriptionClient(_queueConnectionString, "UserWithLessOffer", "DashBoard");
+
+            var handlerOptions = new MessageHandlerOptions(ExceptionHandler)
+            {
+                AutoComplete = false,
+                MaxConcurrentCalls = 3
+            };
+
+            _subscriptionClient.RegisterMessageHandler(MessageHandlerUsersWithLessOffer, handlerOptions);
+            //_subscriptionClient1.RegisterMessageHandler(MessageHandler, handlerOptions);
+        }
+
+        //private static Task ExceptionHandler(ExceptionReceivedEventArgs arg)
+        //{
+        //    Console.WriteLine($"Message handler encountered an exception { arg.Exception}.");
+        //    var context = arg.ExceptionReceivedContext;
+        //    Console.WriteLine($"- Endpoint: {context.Endpoint}, Path: { context.EntityPath}, Action: { context.Action}");
+        //    return Task.CompletedTask;
+        //}
+
+        private static async Task MessageHandlerUsersWithLessOffer(Message message, CancellationToken cancellationToken)
+        {
+            Contexto _context = new Contexto();
+
+            //DbContextOptions<Contexto> options;
+
+            //var builder = new DbContextOptionsBuilder<Contexto>();
+            //builder.UseInMemoryDatabase();
+            //options = builder.Options;
+
+            List<OrderChangedViewModel> listaOrderChanged = new List<OrderChangedViewModel>();
+            UsersWithLessOfferViewModel teste = new UsersWithLessOfferViewModel();
+            if (message.Label != _storeId)
+            {
+                var orderChange = Encoding.UTF8.GetString(message.Body);
+
+                UsersWithLessOfferViewModel teste1 = JsonConvert.DeserializeObject<UsersWithLessOfferViewModel>(orderChange);
+
+                if (teste1.UserId != 0)
+                {
+
+
+                    UserWithLessOffer UserWafferContext = new UserWithLessOffer();
+
+                    UserWafferContext.UserId = teste1.UserId;
+                    UserWafferContext.restrictions = teste1.Restrictions;
+                    
+
+
+
+
+                    _context.UserWithLessOffer.Add(UserWafferContext);
+
+                    _context.SaveChanges();
+
+
+                }
+
+                Console.WriteLine($"Message From Store:{message.Label} with id {message.MessageId} not processed {orderChange.ToString()}");
+                return;
+            }
+
+            var productChangesString = Encoding.UTF8.GetString(message.Body);
+            var productChanges = JsonConvert.DeserializeObject<GeekBurger.Users.Contract.UserFoodRestriction>(productChangesString);
+
+            //here message is actually processed
+            Thread.Sleep(1500);
+            Console.WriteLine($"Message Processed:{productChangesString}");
+
+            await _subscriptionClient.CompleteAsync(message.SystemProperties.LockToken);
+        }
+
+
 
         public IServiceBusNamespace GetServiceBusNamespace(IConfiguration configuration)
         {

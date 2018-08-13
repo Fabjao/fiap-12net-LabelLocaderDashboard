@@ -54,3 +54,18 @@ C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x
 C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.csproj.CopyComplete
 C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.dll
 C:\Users\logonrmlocal\Downloads\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.pdb
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.xml
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.csprojAssemblyReference.cache
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.AssemblyInfoInputs.cache
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.AssemblyInfo.cs
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.dll
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.pdb
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.deps.json
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.runtimeconfig.json
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.runtimeconfig.dev.json
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.dll
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.dll
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\GeekBurger.Dashboard.Contract.pdb
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\obj\x64\Debug\netcoreapp2.0\Dashboard.csproj.CopyComplete
+C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\Dashboard\bin\x64\Debug\netcoreapp2.0\Dashboard.pdb

@@ -11,6 +11,6 @@ namespace GeekBurger.Dashboard.Contract.Models
 
         public ICollection<Restriction> Restrictions { get; set; }
 
-        public int Usage { get; set; }
+        //public int Usage { get; set; }
     }
 }

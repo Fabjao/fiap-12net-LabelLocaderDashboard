@@ -15,6 +15,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\TEMP\fiap-12net-LabelLocaderDashboard\GeekBurger.LabelLocader.Contract\bin\Debug\netcoreapp2.0\GeekBurger.LabelLocader.Contract.dll" target="lib\netcoreapp2.0\GeekBurger.LabelLocader.Contract.dll" />
+    <file src="C:\Users\Guilherme\Documents\Visual Studio 2017\Projects\fiap-12net-LabelLocaderDashboard\GeekBurger.LabelLocader.Contract\bin\Debug\netcoreapp2.0\GeekBurger.LabelLocader.Contract.dll" target="lib\netcoreapp2.0\GeekBurger.LabelLocader.Contract.dll" />
   </files>
 </package>
